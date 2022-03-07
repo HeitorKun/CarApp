@@ -10,21 +10,22 @@ import Foundation
 
 
 class LoginInteractor: PresenterToInteractorLoginProtocol {
-    var presenter: PresenterToViewLoginProtocol?
+
+    var presenter: InteractorToPresenterLoginProtocol?
 
 
     func postLogin(loginUser: String, password: String) {
 
+        CarService().login(username: loginUser, password: password) { postReturn in
+            if postReturn == nil {
+                self.presenter?.loginSuccess()
+            }
+            else {
+                self.presenter?.loginFailed()
+            }
+        }
 
 
-    }
-
-    func loginPostSuccess() {
-        <#code#>
-    }
-
-    func loginPostFailed() {
-        <#code#>
     }
 
 }

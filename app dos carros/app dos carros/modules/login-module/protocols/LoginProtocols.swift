@@ -31,16 +31,15 @@ protocol PresenterToRouterLoginProtocol:AnyObject {
 
 protocol PresenterToInteractorLoginProtocol:AnyObject {
 
-    var presenter:PresenterToViewLoginProtocol? {get set}
-
-    func loginPostSuccess()
-    func loginPostFailed()
+    var presenter:InteractorToPresenterLoginProtocol? {get set}
 
 }
 
 protocol InteractorToPresenterLoginProtocol:AnyObject {
 
 
-    func postLogin()
+    func postLogin(loginUser: String, password: String)
+    func loginSuccess()
+    func loginFailed()
 
 }

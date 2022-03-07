@@ -6,3 +6,30 @@
 //
 
 import Foundation
+
+
+class LoginPresenter: ViewToPresenterMovieProtocol {
+    var view: PresenterToViewLoginProtocol?
+
+    var interactor: PresenterToInteractorLoginProtocol?
+
+    var router: PresenterToRouterLoginProtocol?
+
+}
+
+extension LoginPresenter: InteractorToPresenterLoginProtocol {
+
+    func postLogin(loginUser: String, password: String) {
+        postLogin(loginUser: loginUser, password: password)
+    }
+
+    func loginSuccess() {
+
+    }
+
+    func loginFailed() {
+
+
+    }
+
+}
