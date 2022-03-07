@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct LoginSuccessPostReturn {
+struct LoginSuccessPostReturn:Decodable {
 
     var id: Int
     var login: String
