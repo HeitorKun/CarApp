@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ViewToPresenterMovieProtocol:class{
+protocol ViewToPresenterMovieProtocol:AnyObject{
 
     var view: PresenterToViewLoginProtocol? {get set}
     var interactor: PresenterToInteractorLoginProtocol? {get set}
@@ -15,21 +15,21 @@ protocol ViewToPresenterMovieProtocol:class{
 
 }
 
-protocol PresenterToViewLoginProtocol:class {
+protocol PresenterToViewLoginProtocol:AnyObject {
     func loginSuccessEventDone()
     func loginFailureEventDone()
 
 
 }
 
-protocol PresenterToRouterLoginProtocol:class {
+protocol PresenterToRouterLoginProtocol:AnyObject {
 
     static func createMovieModule()->LoginViewController
     func pushToCarScreen()
 
 }
 
-protocol PresenterToInteractorLoginProtocol:class {
+protocol PresenterToInteractorLoginProtocol:AnyObject {
 
     var presenter:PresenterToViewLoginProtocol? {get set}
 
@@ -38,7 +38,7 @@ protocol PresenterToInteractorLoginProtocol:class {
 
 }
 
-protocol InteractorToPresenterLoginProtocol:class {
+protocol InteractorToPresenterLoginProtocol:AnyObject {
 
 
     func postLogin()

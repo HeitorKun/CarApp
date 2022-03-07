@@ -15,6 +15,8 @@
 		FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696027D66BE800BC8BCC /* LoginViewController.swift */; };
 		FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */; };
 		FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696827D66E5800BC8BCC /* LoginModel.swift */; };
+		FD4F696C27D6754E00BC8BCC /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696B27D6754E00BC8BCC /* LoginInteractor.swift */; };
+		FD4F696E27D67B4200BC8BCC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696D27D67B4200BC8BCC /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FD4F696027D66BE800BC8BCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		FD4F696827D66E5800BC8BCC /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		FD4F696B27D6754E00BC8BCC /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		FD4F696D27D67B4200BC8BCC /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		FD4F695E27D66AF000BC8BCC /* login-module */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F696A27D6753500BC8BCC /* interactor */,
 				FD4F696727D66DE600BC8BCC /* model */,
 				FD4F696427D66C3E00BC8BCC /* protocols */,
 				FD4F696227D66C0E00BC8BCC /* presenter */,
@@ -93,6 +98,7 @@
 		FD4F696227D66C0E00BC8BCC /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F696D27D67B4200BC8BCC /* LoginPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -119,6 +125,14 @@
 				FD4F696827D66E5800BC8BCC /* LoginModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		FD4F696A27D6753500BC8BCC /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F696B27D6754E00BC8BCC /* LoginInteractor.swift */,
+			);
+			path = interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,8 +208,10 @@
 			files = (
 				FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */,
 				FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */,
+				FD4F696E27D67B4200BC8BCC /* LoginPresenter.swift in Sources */,
 				FD4F694B27D66AA800BC8BCC /* AppDelegate.swift in Sources */,
 				FD4F694D27D66AA800BC8BCC /* SceneDelegate.swift in Sources */,
+				FD4F696C27D6754E00BC8BCC /* LoginInteractor.swift in Sources */,
 				FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
