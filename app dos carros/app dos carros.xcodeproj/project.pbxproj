@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD4F694B27D66AA800BC8BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F694A27D66AA800BC8BCC /* AppDelegate.swift */; };
+		FD4F694D27D66AA800BC8BCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F694C27D66AA800BC8BCC /* SceneDelegate.swift */; };
+		FD4F695227D66AA800BC8BCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4F695027D66AA800BC8BCC /* Main.storyboard */; };
+		FD4F695427D66AAA00BC8BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4F695327D66AAA00BC8BCC /* Assets.xcassets */; };
+		FD4F695727D66AAA00BC8BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4F695527D66AAA00BC8BCC /* LaunchScreen.storyboard */; };
+		FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696027D66BE800BC8BCC /* LoginViewController.swift */; };
+		FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */; };
+		FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696827D66E5800BC8BCC /* LoginModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD4F694727D66AA800BC8BCC /* app dos carros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app dos carros.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4F694A27D66AA800BC8BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD4F694C27D66AA800BC8BCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD4F695127D66AA800BC8BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD4F695327D66AAA00BC8BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD4F695627D66AAA00BC8BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD4F695827D66AAA00BC8BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD4F696027D66BE800BC8BCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		FD4F696827D66E5800BC8BCC /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD4F694427D66AA800BC8BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD4F693E27D66AA800BC8BCC = {
+			isa = PBXGroup;
+			children = (
+				FD4F694927D66AA800BC8BCC /* app dos carros */,
+				FD4F694827D66AA800BC8BCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD4F694827D66AA800BC8BCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F694727D66AA800BC8BCC /* app dos carros.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD4F694927D66AA800BC8BCC /* app dos carros */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F696327D66C3300BC8BCC /* modules */,
+				FD4F694A27D66AA800BC8BCC /* AppDelegate.swift */,
+				FD4F694C27D66AA800BC8BCC /* SceneDelegate.swift */,
+				FD4F695027D66AA800BC8BCC /* Main.storyboard */,
+				FD4F695327D66AAA00BC8BCC /* Assets.xcassets */,
+				FD4F695527D66AAA00BC8BCC /* LaunchScreen.storyboard */,
+				FD4F695827D66AAA00BC8BCC /* Info.plist */,
+			);
+			path = "app dos carros";
+			sourceTree = "<group>";
+		};
+		FD4F695E27D66AF000BC8BCC /* login-module */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F696727D66DE600BC8BCC /* model */,
+				FD4F696427D66C3E00BC8BCC /* protocols */,
+				FD4F696227D66C0E00BC8BCC /* presenter */,
+				FD4F695F27D66B7700BC8BCC /* view */,
+			);
+			path = "login-module";
+			sourceTree = "<group>";
+		};
+		FD4F695F27D66B7700BC8BCC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F696027D66BE800BC8BCC /* LoginViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FD4F696227D66C0E00BC8BCC /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		FD4F696327D66C3300BC8BCC /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F695E27D66AF000BC8BCC /* login-module */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		FD4F696427D66C3E00BC8BCC /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		FD4F696727D66DE600BC8BCC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F696827D66E5800BC8BCC /* LoginModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD4F694627D66AA800BC8BCC /* app dos carros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4F695B27D66AAA00BC8BCC /* Build configuration list for PBXNativeTarget "app dos carros" */;
+			buildPhases = (
+				FD4F694327D66AA800BC8BCC /* Sources */,
+				FD4F694427D66AA800BC8BCC /* Frameworks */,
+				FD4F694527D66AA800BC8BCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "app dos carros";
+			productName = "app dos carros";
+			productReference = FD4F694727D66AA800BC8BCC /* app dos carros.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD4F693F27D66AA800BC8BCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FD4F694627D66AA800BC8BCC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FD4F694227D66AA800BC8BCC /* Build configuration list for PBXProject "app dos carros" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD4F693E27D66AA800BC8BCC;
+			productRefGroup = FD4F694827D66AA800BC8BCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD4F694627D66AA800BC8BCC /* app dos carros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD4F694527D66AA800BC8BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4F695727D66AAA00BC8BCC /* LaunchScreen.storyboard in Resources */,
+				FD4F695427D66AAA00BC8BCC /* Assets.xcassets in Resources */,
+				FD4F695227D66AA800BC8BCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD4F694327D66AA800BC8BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */,
+				FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */,
+				FD4F694B27D66AA800BC8BCC /* AppDelegate.swift in Sources */,
+				FD4F694D27D66AA800BC8BCC /* SceneDelegate.swift in Sources */,
+				FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD4F695027D66AA800BC8BCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD4F695127D66AA800BC8BCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD4F695527D66AAA00BC8BCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD4F695627D66AAA00BC8BCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD4F695927D66AAA00BC8BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD4F695A27D66AAA00BC8BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD4F695C27D66AAA00BC8BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2XYML6X84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "app dos carros/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "heitor.app-dos-carros";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD4F695D27D66AAA00BC8BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2XYML6X84;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "app dos carros/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "heitor.app-dos-carros";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD4F694227D66AA800BC8BCC /* Build configuration list for PBXProject "app dos carros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4F695927D66AAA00BC8BCC /* Debug */,
+				FD4F695A27D66AAA00BC8BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4F695B27D66AAA00BC8BCC /* Build configuration list for PBXNativeTarget "app dos carros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4F695C27D66AAA00BC8BCC /* Debug */,
+				FD4F695D27D66AAA00BC8BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD4F693F27D66AA800BC8BCC /* Project object */;
+}
