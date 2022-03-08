@@ -19,8 +19,8 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
 
-    func postLogin(loginUser: String, password: String) {
-        postLogin(loginUser: loginUser, password: password)
+    func loginRequest(loginUser: String, password: String) {
+        interactor?.postLogin(loginUser: loginUser, password: password)
     }
 
     func loginSuccess() {

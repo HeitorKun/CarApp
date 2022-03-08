@@ -9,10 +9,23 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var carrosTitleView: UIView!
+    @IBOutlet weak var bigLoginView: UIView!
+    @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
 
-        // Do any additional setup after loading the view.
+    }
+
+    func setUpUI() {
+        backgroundImage.image = UIImage(named: "backLoginImage")
+        bigLoginView.layer.cornerRadius = 20
+        bigLoginView.clipsToBounds = true
     }
     
 
