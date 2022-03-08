@@ -37,12 +37,16 @@ class CarService {
             }
 
             if let data = data, let dataString = String(data: data, encoding: .utf8) {
-                let loginSuccessPostReturnStruct = try? JSONDecoder().decode(LoginSuccessPostReturn.self, from: data)
-                completion(loginSuccessPostReturnStruct)
+                if let loginSuccessPostReturnStruct = try? JSONDecoder().decode(LoginSuccessPostReturn.self, from: data) {
+                    completion(loginSuccessPostReturnStruct)
+                } else {
+                    completion(nil)
+                }
+
             }
         }
         task.resume()
-        
+
     }
 
 }

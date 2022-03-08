@@ -29,11 +29,11 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
 
     func loginSuccess() {
-
+        view?.loginSuccessEventDone()
     }
 
     func loginFailed() {
-
+        view?.loginFailureEventDone()
 
     }
 

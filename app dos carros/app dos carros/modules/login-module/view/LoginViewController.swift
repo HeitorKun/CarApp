@@ -29,6 +29,7 @@ class LoginViewController: UIViewController, PresenterToViewLoginProtocol {
         backgroundImage.image = UIImage(named: "backLoginImage")
         bigLoginView.layer.cornerRadius = 20
         bigLoginView.clipsToBounds = true
+        passwordTextField.isSecureTextEntry = true
 
     }
 
@@ -37,19 +38,31 @@ class LoginViewController: UIViewController, PresenterToViewLoginProtocol {
             presenter?.loginRequest(loginUser: "", password: "")
 
         } else {
+
             presenter?.loginRequest(loginUser: loginTextField.text!, password: passwordTextField.text!)
+
         }
     }
 
     func loginSuccessEventDone() {
+        presenter
 
     }
 
     func loginFailureEventDone() {
+
+        let alert = UIAlertController(title: "Login ou senha inválidos", message: "Favor tentar novamente", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "ok", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
         
     }
 
     func pleaseCompleteFieldsUIAlert() {
+        let alert = UIAlertController(title: "Campos inválidos", message: "Favor tentar novamente", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "ok", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
 
     }
 

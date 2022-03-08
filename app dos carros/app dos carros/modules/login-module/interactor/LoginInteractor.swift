@@ -13,18 +13,21 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
 
     var presenter: InteractorToPresenterLoginProtocol?
 
-
     func postLogin(loginUser: String, password: String) {
 
         CarService().login(username: loginUser, password: password) { postReturn in
+
             if postReturn == nil {
-                self.presenter?.loginSuccess()
+                DispatchQueue.main.sync {
+                    self.presenter?.loginFailed()
+                }
             }
             else {
-                self.presenter?.loginFailed()
+                DispatchQueue.main.sync {
+                    self.presenter?.loginSuccess()
+                }
             }
         }
-
 
     }
 

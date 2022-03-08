@@ -20,3 +20,9 @@ struct LoginSuccessPostReturn: Decodable {
 
 }
 
+struct LoginFailurePostReturn: Decodable {
+
+    var error: String
+
+}
+
