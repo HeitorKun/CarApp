@@ -13,10 +13,15 @@ protocol ViewToPresenterMovieProtocol:AnyObject{
     var interactor: PresenterToInteractorLoginProtocol? {get set}
     var router: PresenterToRouterLoginProtocol? {get set}
 
+    func loginRequest(loginUser: String, password: String)
+
 }
 
 protocol PresenterToViewLoginProtocol:AnyObject {
 
+    var presenter: ViewToPresenterMovieProtocol? { get set }
+
+    func pleaseCompleteFieldsUIAlert()
     func loginSuccessEventDone()
     func loginFailureEventDone()
 
@@ -39,8 +44,6 @@ protocol PresenterToInteractorLoginProtocol:AnyObject {
 
 protocol InteractorToPresenterLoginProtocol:AnyObject {
 
-
-    func loginRequest(loginUser: String, password: String)
     func loginSuccess()
     func loginFailed()
 

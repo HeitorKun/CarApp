@@ -15,13 +15,18 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
 
     var router: PresenterToRouterLoginProtocol?
 
+    func loginRequest(loginUser: String, password: String) {
+        if loginUser == "" && password == "" {
+            view?.pleaseCompleteFieldsUIAlert()
+        }
+        else {
+            interactor?.postLogin(loginUser: loginUser, password: password)
+        }
+    }
+
 }
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
-
-    func loginRequest(loginUser: String, password: String) {
-        interactor?.postLogin(loginUser: loginUser, password: password)
-    }
 
     func loginSuccess() {
 

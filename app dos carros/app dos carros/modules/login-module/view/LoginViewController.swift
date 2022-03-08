@@ -7,7 +7,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, PresenterToViewLoginProtocol {
+
+    var presenter: ViewToPresenterMovieProtocol?
 
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var carrosTitleView: UIView!
@@ -19,24 +21,36 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
-
+        
     }
 
     func setUpUI() {
+
         backgroundImage.image = UIImage(named: "backLoginImage")
         bigLoginView.layer.cornerRadius = 20
         bigLoginView.clipsToBounds = true
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+
+    @IBAction func didTouchLoginButton(_ sender: UIButton) {
+        if loginTextField.text == "" || loginTextField.text == nil || passwordTextField.text == "" || passwordTextField.text == nil {
+            presenter?.loginRequest(loginUser: "", password: "")
+
+        } else {
+            presenter?.loginRequest(loginUser: loginTextField.text!, password: passwordTextField.text!)
+        }
+    }
+
+    func loginSuccessEventDone() {
+
+    }
+
+    func loginFailureEventDone() {
+        
+    }
+
+    func pleaseCompleteFieldsUIAlert() {
+
+    }
 
 }
