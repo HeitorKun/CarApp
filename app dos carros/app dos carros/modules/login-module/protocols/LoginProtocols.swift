@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViewToPresenterMovieProtocol:AnyObject{
 
@@ -33,7 +34,7 @@ protocol PresenterToRouterLoginProtocol:AnyObject {
 
     static func createMovieModule()->LoginViewController
 
-    func pushToCarScreen()
+    func pushToCarScreen(viewController: UIViewController)
 
 }
 

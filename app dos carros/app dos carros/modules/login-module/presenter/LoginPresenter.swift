@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 class LoginPresenter: ViewToPresenterMovieProtocol {
     var view: PresenterToViewLoginProtocol?
@@ -25,7 +25,7 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
     }
 
     func loginDoneViewReadyForNavigation() {
-        router?.pushToCarScreen()
+        router?.pushToCarScreen(viewController: view as! UIViewController)
     }
 
 }
