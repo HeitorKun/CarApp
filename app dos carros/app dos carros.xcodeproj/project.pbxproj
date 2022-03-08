@@ -22,6 +22,11 @@
 		FD4F697627D68C4600BC8BCC /* LoginSuccessPostReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697527D68C4600BC8BCC /* LoginSuccessPostReturn.swift */; };
 		FD4F697927D78F6400BC8BCC /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697827D78F6400BC8BCC /* LoginRouter.swift */; };
 		FD4F697D27D7CDFD00BC8BCC /* CarsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4F697C27D7CDFD00BC8BCC /* CarsStoryboard.storyboard */; };
+		FD4F698427D7D10900BC8BCC /* CarsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698327D7D10900BC8BCC /* CarsListProtocols.swift */; };
+		FD4F698827D7D45300BC8BCC /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698727D7D45300BC8BCC /* CarsListViewController.swift */; };
+		FD4F698C27D7D5DE00BC8BCC /* CarsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698B27D7D5DE00BC8BCC /* CarsListRouter.swift */; };
+		FD4F699027D7E05D00BC8BCC /* CarsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */; };
+		FD4F699227D7E06E00BC8BCC /* CarsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		FD4F697527D68C4600BC8BCC /* LoginSuccessPostReturn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessPostReturn.swift; sourceTree = "<group>"; };
 		FD4F697827D78F6400BC8BCC /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		FD4F697C27D7CDFD00BC8BCC /* CarsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarsStoryboard.storyboard; sourceTree = "<group>"; };
+		FD4F698327D7D10900BC8BCC /* CarsListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListProtocols.swift; sourceTree = "<group>"; };
+		FD4F698727D7D45300BC8BCC /* CarsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewController.swift; sourceTree = "<group>"; };
+		FD4F698B27D7D5DE00BC8BCC /* CarsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListRouter.swift; sourceTree = "<group>"; };
+		FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListPresenter.swift; sourceTree = "<group>"; };
+		FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +131,7 @@
 		FD4F696327D66C3300BC8BCC /* modules */ = {
 			isa = PBXGroup;
 			children = (
-				FD4F697E27D7CE1D00BC8BCC /* cars-module */,
+				FD4F697E27D7CE1D00BC8BCC /* carsList-module */,
 				FD4F695E27D66AF000BC8BCC /* login-module */,
 			);
 			path = modules;
@@ -183,20 +193,23 @@
 			path = "App-UI";
 			sourceTree = "<group>";
 		};
-		FD4F697E27D7CE1D00BC8BCC /* cars-module */ = {
+		FD4F697E27D7CE1D00BC8BCC /* carsList-module */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F698E27D7E02900BC8BCC /* model */,
+				FD4F698D27D7E00B00BC8BCC /* interactor */,
 				FD4F698227D7CE7000BC8BCC /* view */,
 				FD4F698127D7CE6400BC8BCC /* presenter */,
 				FD4F698027D7CE5200BC8BCC /* router */,
 				FD4F697F27D7CE4300BC8BCC /* protocols */,
 			);
-			path = "cars-module";
+			path = "carsList-module";
 			sourceTree = "<group>";
 		};
 		FD4F697F27D7CE4300BC8BCC /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F698327D7D10900BC8BCC /* CarsListProtocols.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -204,6 +217,7 @@
 		FD4F698027D7CE5200BC8BCC /* router */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F698B27D7D5DE00BC8BCC /* CarsListRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -211,6 +225,7 @@
 		FD4F698127D7CE6400BC8BCC /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -218,8 +233,24 @@
 		FD4F698227D7CE7000BC8BCC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F698727D7D45300BC8BCC /* CarsListViewController.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		FD4F698D27D7E00B00BC8BCC /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		FD4F698E27D7E02900BC8BCC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,11 +328,16 @@
 				FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */,
 				FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */,
 				FD4F697427D6899300BC8BCC /* Constants.swift in Sources */,
+				FD4F699227D7E06E00BC8BCC /* CarsListInteractor.swift in Sources */,
+				FD4F698827D7D45300BC8BCC /* CarsListViewController.swift in Sources */,
 				FD4F697627D68C4600BC8BCC /* LoginSuccessPostReturn.swift in Sources */,
 				FD4F697127D6883400BC8BCC /* CarService.swift in Sources */,
+				FD4F698C27D7D5DE00BC8BCC /* CarsListRouter.swift in Sources */,
 				FD4F696E27D67B4200BC8BCC /* LoginPresenter.swift in Sources */,
 				FD4F694B27D66AA800BC8BCC /* AppDelegate.swift in Sources */,
 				FD4F694D27D66AA800BC8BCC /* SceneDelegate.swift in Sources */,
+				FD4F699027D7E05D00BC8BCC /* CarsListPresenter.swift in Sources */,
+				FD4F698427D7D10900BC8BCC /* CarsListProtocols.swift in Sources */,
 				FD4F697927D78F6400BC8BCC /* LoginRouter.swift in Sources */,
 				FD4F696C27D6754E00BC8BCC /* LoginInteractor.swift in Sources */,
 				FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */,
