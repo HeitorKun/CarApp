@@ -24,6 +24,10 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
         }
     }
 
+    func loginDoneViewReadyForNavigation() {
+        router?.pushToCarScreen()
+    }
+
 }
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {

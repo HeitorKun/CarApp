@@ -15,6 +15,8 @@ protocol ViewToPresenterMovieProtocol:AnyObject{
 
     func loginRequest(loginUser: String, password: String)
 
+    func loginDoneViewReadyForNavigation()
+
 }
 
 protocol PresenterToViewLoginProtocol:AnyObject {
@@ -30,6 +32,7 @@ protocol PresenterToViewLoginProtocol:AnyObject {
 protocol PresenterToRouterLoginProtocol:AnyObject {
 
     static func createMovieModule()->LoginViewController
+
     func pushToCarScreen()
 
 }

@@ -38,14 +38,13 @@ class LoginViewController: UIViewController, PresenterToViewLoginProtocol {
             presenter?.loginRequest(loginUser: "", password: "")
 
         } else {
-
             presenter?.loginRequest(loginUser: loginTextField.text!, password: passwordTextField.text!)
-
         }
     }
 
     func loginSuccessEventDone() {
-        presenter
+
+        presenter?.loginDoneViewReadyForNavigation()
 
     }
 
