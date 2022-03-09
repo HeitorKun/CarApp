@@ -28,6 +28,7 @@
 		FD4F699027D7E05D00BC8BCC /* CarsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */; };
 		FD4F699227D7E06E00BC8BCC /* CarsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */; };
 		FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */; };
+		FDFBCE0127D91DA900619AE8 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListPresenter.swift; sourceTree = "<group>"; };
 		FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListInteractor.swift; sourceTree = "<group>"; };
 		FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
+		FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		FD4F694927D66AA800BC8BCC /* app dos carros */ = {
 			isa = PBXGroup;
 			children = (
+				FDFBCDFF27D91D9000619AE8 /* Helpers */,
 				FD4F697A27D7CD9300BC8BCC /* App-UI */,
 				FD4F697227D688CD00BC8BCC /* Constants */,
 				FD4F696F27D6881200BC8BCC /* CarService */,
@@ -256,6 +259,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		FDFBCDFF27D91D9000619AE8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFBCE0127D91DA900619AE8 /* UserDefaultsHelper.swift in Sources */,
 				FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */,
 				FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */,
 				FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */,

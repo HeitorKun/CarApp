@@ -23,8 +23,9 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
                 }
             }
             else {
+                let loginModel = LoginModel(token: postReturn?.token ?? "")
                 DispatchQueue.main.sync {
-                    self.presenter?.loginSuccess()
+                    self.presenter?.loginSuccess(loginModel: loginModel)
                 }
             }
         }

@@ -7,3 +7,8 @@
 
 import Foundation
 
+struct LoginModel {
+
+    var token: String
+
+}

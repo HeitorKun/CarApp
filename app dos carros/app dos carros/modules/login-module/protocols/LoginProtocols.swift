@@ -48,7 +48,7 @@ protocol PresenterToInteractorLoginProtocol:AnyObject {
 
 protocol InteractorToPresenterLoginProtocol:AnyObject {
 
-    func loginSuccess()
+    func loginSuccess(loginModel: LoginModel)
     func loginFailed()
 
 }

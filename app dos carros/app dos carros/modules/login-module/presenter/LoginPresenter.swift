@@ -9,11 +9,17 @@ import Foundation
 import UIKit
 
 class LoginPresenter: ViewToPresenterMovieProtocol {
-    var view: PresenterToViewLoginProtocol?
+     var view: PresenterToViewLoginProtocol?
 
-    var interactor: PresenterToInteractorLoginProtocol?
+     var interactor: PresenterToInteractorLoginProtocol?
 
-    var router: PresenterToRouterLoginProtocol?
+     var router: PresenterToRouterLoginProtocol?
+
+    private let tokenSaverHelper: SaveTokenAfterLogin
+
+    init() {
+        self.tokenSaverHelper = UserDefaultsHelper()
+    }
 
     func loginRequest(loginUser: String, password: String) {
         if loginUser == "" && password == "" {
@@ -32,8 +38,12 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
 
 extension LoginPresenter: InteractorToPresenterLoginProtocol {
 
-    func loginSuccess() {
+    func loginSuccess(loginModel: LoginModel) {
+
+        tokenSaverHelper.saveToken(token: loginModel.token)
+
         view?.loginSuccessEventDone()
+
     }
 
     func loginFailed() {

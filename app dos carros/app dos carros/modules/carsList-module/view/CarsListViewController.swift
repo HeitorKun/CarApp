@@ -10,15 +10,22 @@ import UIKit
 class CarsListViewController: UIViewController, PresenterToViewCarsListProtocol {
 
     var presenter: ViewToPresenterCarsListProtocol?
+    @IBOutlet weak var carsTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        carsTableView.dataSource = self
+        carsTableView.delegate = self
 
     }
 
+    func loadTableView() {
+
+        carsTableView.reloadData()
+    }
+
 }
-extension CarsListViewController: UITableViewDataSource {
+extension CarsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }

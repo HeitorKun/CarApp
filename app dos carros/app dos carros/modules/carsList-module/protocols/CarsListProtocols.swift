@@ -20,6 +20,8 @@ protocol PresenterToViewCarsListProtocol:AnyObject {
 
     var presenter: ViewToPresenterCarsListProtocol? { get set }
 
+    func loadTableView()
+
 }
 
 protocol PresenterToRouterCarsListProtocol:AnyObject {
