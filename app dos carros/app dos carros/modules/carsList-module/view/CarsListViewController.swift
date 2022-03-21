@@ -10,16 +10,20 @@ import UIKit
 class CarsListViewController: UIViewController, PresenterToViewCarsListProtocol {
 
     var presenter: ViewToPresenterCarsListProtocol?
+
     @IBOutlet weak var carsTableView: UITableView!
+
+    var carList: [CarsListModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         carsTableView.dataSource = self
         carsTableView.delegate = self
+        presenter?.fetchCarsFromInteractor()
 
     }
 
-    func loadTableView() {
+    func receiveCarsData(carList: [CarsListModel]) {
 
         carsTableView.reloadData()
     }

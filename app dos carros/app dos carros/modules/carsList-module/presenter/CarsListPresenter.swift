@@ -15,6 +15,18 @@ class CarsListPresenter : ViewToPresenterCarsListProtocol {
     var router: PresenterToRouterCarsListProtocol?
 
 
+    func fetchCarsFromInteractor() {
+
+        interactor?.fetchCarList(completion: { carList in
+
+            DispatchQueue.main.sync { [weak self] in
+                self?.view?.receiveCarsData(carList: carList)
+            }
+        })
+
+    }
+
+
 }
 extension CarsListPresenter : InteractorToPresenterCarsListProtocol {
 

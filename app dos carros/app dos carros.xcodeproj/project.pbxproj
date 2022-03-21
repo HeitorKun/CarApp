@@ -16,7 +16,6 @@
 		FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */; };
 		FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696827D66E5800BC8BCC /* LoginModel.swift */; };
 		FD4F696C27D6754E00BC8BCC /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696B27D6754E00BC8BCC /* LoginInteractor.swift */; };
-		FD4F696E27D67B4200BC8BCC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696D27D67B4200BC8BCC /* LoginPresenter.swift */; };
 		FD4F697127D6883400BC8BCC /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697027D6883400BC8BCC /* CarService.swift */; };
 		FD4F697427D6899300BC8BCC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697327D6899300BC8BCC /* Constants.swift */; };
 		FD4F697627D68C4600BC8BCC /* LoginSuccessPostReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697527D68C4600BC8BCC /* LoginSuccessPostReturn.swift */; };
@@ -28,9 +27,38 @@
 		FD4F699027D7E05D00BC8BCC /* CarsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */; };
 		FD4F699227D7E06E00BC8BCC /* CarsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */; };
 		FD6CC31127E7E3C5001DA213 /* CarsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC31027E7E3C5001DA213 /* CarsListModel.swift */; };
+		FD6CC31927E8F8FD001DA213 /* app_dos_carrosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC31827E8F8FD001DA213 /* app_dos_carrosTests.swift */; };
+		FD6CC32127E8F9DB001DA213 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696B27D6754E00BC8BCC /* LoginInteractor.swift */; };
+		FD6CC32227E8F9EA001DA213 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697827D78F6400BC8BCC /* LoginRouter.swift */; };
+		FD6CC32327E8F9ED001DA213 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696827D66E5800BC8BCC /* LoginModel.swift */; };
+		FD6CC32427E8F9F1001DA213 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696527D66CCC00BC8BCC /* LoginProtocols.swift */; };
+		FD6CC32527E8F9F5001DA213 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696D27D67B4200BC8BCC /* LoginPresenter.swift */; };
+		FD6CC32627E8F9F5001DA213 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696D27D67B4200BC8BCC /* LoginPresenter.swift */; };
+		FD6CC32827E8FAF4001DA213 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F696027D66BE800BC8BCC /* LoginViewController.swift */; };
+		FD6CC32927E8FB13001DA213 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */; };
+		FD6CC32A27E8FB23001DA213 /* CarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697027D6883400BC8BCC /* CarService.swift */; };
+		FD6CC32B27E8FB31001DA213 /* CarsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698B27D7D5DE00BC8BCC /* CarsListRouter.swift */; };
+		FD6CC32C27E8FD99001DA213 /* CarsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698327D7D10900BC8BCC /* CarsListProtocols.swift */; };
+		FD6CC32D27E8FD9E001DA213 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */; };
+		FD6CC32E27E8FDA1001DA213 /* CarsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698727D7D45300BC8BCC /* CarsListViewController.swift */; };
+		FD6CC32F27E8FDA4001DA213 /* CarsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */; };
+		FD6CC33027E8FDA7001DA213 /* CarsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC31027E7E3C5001DA213 /* CarsListModel.swift */; };
+		FD6CC33127E8FDAC001DA213 /* LoginSuccessPostReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697527D68C4600BC8BCC /* LoginSuccessPostReturn.swift */; };
+		FD6CC33227E8FDAF001DA213 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697327D6899300BC8BCC /* Constants.swift */; };
+		FD6CC33327E8FDBF001DA213 /* CarsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */; };
 		FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */; };
 		FDFBCE0127D91DA900619AE8 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6CC31A27E8F8FD001DA213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD4F693F27D66AA800BC8BCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD4F694627D66AA800BC8BCC;
+			remoteInfo = "app dos carros";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FD4F694727D66AA800BC8BCC /* app dos carros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app dos carros.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,12 +84,21 @@
 		FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListPresenter.swift; sourceTree = "<group>"; };
 		FD4F699127D7E06E00BC8BCC /* CarsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListInteractor.swift; sourceTree = "<group>"; };
 		FD6CC31027E7E3C5001DA213 /* CarsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListModel.swift; sourceTree = "<group>"; };
+		FD6CC31627E8F8FD001DA213 /* app dos carrosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app dos carrosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6CC31827E8F8FD001DA213 /* app_dos_carrosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dos_carrosTests.swift; sourceTree = "<group>"; };
 		FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
 		FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FD4F694427D66AA800BC8BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6CC31327E8F8FD001DA213 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				FD4F694927D66AA800BC8BCC /* app dos carros */,
+				FD6CC31727E8F8FD001DA213 /* app dos carrosTests */,
 				FD4F694827D66AA800BC8BCC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				FD4F694727D66AA800BC8BCC /* app dos carros.app */,
+				FD6CC31627E8F8FD001DA213 /* app dos carrosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,9 +145,9 @@
 		FD4F695E27D66AF000BC8BCC /* login-module */ = {
 			isa = PBXGroup;
 			children = (
+				FD4F696727D66DE600BC8BCC /* model */,
 				FD4F697727D78F5300BC8BCC /* router */,
 				FD4F696A27D6753500BC8BCC /* interactor */,
-				FD4F696727D66DE600BC8BCC /* model */,
 				FD4F696427D66C3E00BC8BCC /* protocols */,
 				FD4F696227D66C0E00BC8BCC /* presenter */,
 				FD4F695F27D66B7700BC8BCC /* view */,
@@ -262,6 +301,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		FD6CC31727E8F8FD001DA213 /* app dos carrosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6CC31827E8F8FD001DA213 /* app_dos_carrosTests.swift */,
+			);
+			path = "app dos carrosTests";
+			sourceTree = "<group>";
+		};
 		FDFBCDFF27D91D9000619AE8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +337,24 @@
 			productReference = FD4F694727D66AA800BC8BCC /* app dos carros.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FD6CC31527E8F8FD001DA213 /* app dos carrosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6CC31C27E8F8FD001DA213 /* Build configuration list for PBXNativeTarget "app dos carrosTests" */;
+			buildPhases = (
+				FD6CC31227E8F8FD001DA213 /* Sources */,
+				FD6CC31327E8F8FD001DA213 /* Frameworks */,
+				FD6CC31427E8F8FD001DA213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6CC31B27E8F8FD001DA213 /* PBXTargetDependency */,
+			);
+			name = "app dos carrosTests";
+			productName = "app dos carrosTests";
+			productReference = FD6CC31627E8F8FD001DA213 /* app dos carrosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,11 +362,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					FD4F694627D66AA800BC8BCC = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					FD6CC31527E8F8FD001DA213 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = FD4F694627D66AA800BC8BCC;
 					};
 				};
 			};
@@ -319,6 +388,7 @@
 			projectRoot = "";
 			targets = (
 				FD4F694627D66AA800BC8BCC /* app dos carros */,
+				FD6CC31527E8F8FD001DA213 /* app dos carrosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +405,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD6CC31427E8F8FD001DA213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -346,6 +423,7 @@
 				FD4F696927D66E5800BC8BCC /* LoginModel.swift in Sources */,
 				FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */,
 				FD4F696127D66BE800BC8BCC /* LoginViewController.swift in Sources */,
+				FD6CC32627E8F9F5001DA213 /* LoginPresenter.swift in Sources */,
 				FD4F697427D6899300BC8BCC /* Constants.swift in Sources */,
 				FD4F699227D7E06E00BC8BCC /* CarsListInteractor.swift in Sources */,
 				FD6CC31127E7E3C5001DA213 /* CarsListModel.swift in Sources */,
@@ -353,7 +431,6 @@
 				FD4F697627D68C4600BC8BCC /* LoginSuccessPostReturn.swift in Sources */,
 				FD4F697127D6883400BC8BCC /* CarService.swift in Sources */,
 				FD4F698C27D7D5DE00BC8BCC /* CarsListRouter.swift in Sources */,
-				FD4F696E27D67B4200BC8BCC /* LoginPresenter.swift in Sources */,
 				FD4F694B27D66AA800BC8BCC /* AppDelegate.swift in Sources */,
 				FD4F694D27D66AA800BC8BCC /* SceneDelegate.swift in Sources */,
 				FD4F699027D7E05D00BC8BCC /* CarsListPresenter.swift in Sources */,
@@ -364,7 +441,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD6CC31227E8F8FD001DA213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6CC32827E8FAF4001DA213 /* LoginViewController.swift in Sources */,
+				FD6CC33227E8FDAF001DA213 /* Constants.swift in Sources */,
+				FD6CC32527E8F9F5001DA213 /* LoginPresenter.swift in Sources */,
+				FD6CC32D27E8FD9E001DA213 /* CarListTableViewCell.swift in Sources */,
+				FD6CC32E27E8FDA1001DA213 /* CarsListViewController.swift in Sources */,
+				FD6CC33327E8FDBF001DA213 /* CarsListPresenter.swift in Sources */,
+				FD6CC32927E8FB13001DA213 /* UserDefaultsHelper.swift in Sources */,
+				FD6CC32127E8F9DB001DA213 /* LoginInteractor.swift in Sources */,
+				FD6CC32427E8F9F1001DA213 /* LoginProtocols.swift in Sources */,
+				FD6CC32B27E8FB31001DA213 /* CarsListRouter.swift in Sources */,
+				FD6CC32327E8F9ED001DA213 /* LoginModel.swift in Sources */,
+				FD6CC32F27E8FDA4001DA213 /* CarsListInteractor.swift in Sources */,
+				FD6CC32C27E8FD99001DA213 /* CarsListProtocols.swift in Sources */,
+				FD6CC32A27E8FB23001DA213 /* CarService.swift in Sources */,
+				FD6CC33027E8FDA7001DA213 /* CarsListModel.swift in Sources */,
+				FD6CC31927E8F8FD001DA213 /* app_dos_carrosTests.swift in Sources */,
+				FD6CC32227E8F9EA001DA213 /* LoginRouter.swift in Sources */,
+				FD6CC33127E8FDAC001DA213 /* LoginSuccessPostReturn.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6CC31B27E8F8FD001DA213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD4F694627D66AA800BC8BCC /* app dos carros */;
+			targetProxy = FD6CC31A27E8F8FD001DA213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FD4F695027D66AA800BC8BCC /* InitialStoryboard.storyboard */ = {
@@ -556,6 +666,44 @@
 			};
 			name = Release;
 		};
+		FD6CC31D27E8F8FD001DA213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2XYML6X84;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "heitor.app-dos-carrosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app dos carros.app/app dos carros";
+			};
+			name = Debug;
+		};
+		FD6CC31E27E8F8FD001DA213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2XYML6X84;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "heitor.app-dos-carrosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/app dos carros.app/app dos carros";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +721,15 @@
 			buildConfigurations = (
 				FD4F695C27D66AAA00BC8BCC /* Debug */,
 				FD4F695D27D66AAA00BC8BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6CC31C27E8F8FD001DA213 /* Build configuration list for PBXNativeTarget "app dos carrosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6CC31D27E8F8FD001DA213 /* Debug */,
+				FD6CC31E27E8F8FD001DA213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

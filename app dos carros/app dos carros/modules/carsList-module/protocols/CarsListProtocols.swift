@@ -23,7 +23,7 @@ protocol PresenterToViewCarsListProtocol:AnyObject {
 
     var presenter: ViewToPresenterCarsListProtocol? { get set }
 
-    func loadTableView()
+    func receiveCarsData(carList: [CarsListModel])
 
 }
 
@@ -39,7 +39,7 @@ protocol PresenterToInteractorCarsListProtocol:AnyObject {
 
     var presenter:InteractorToPresenterCarsListProtocol? {get set}
 
-    func fetchCarList()
+    func fetchCarList(completion: @escaping ([CarsListModel]) ->())
 
 }
 

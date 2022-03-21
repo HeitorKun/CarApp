@@ -18,14 +18,14 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
         CarService().login(username: loginUser, password: password) { postReturn in
 
             if postReturn == nil {
-                DispatchQueue.main.sync {
-                    self.presenter?.loginFailed()
+                DispatchQueue.main.sync { [weak self] in
+                    self?.presenter?.loginFailed()
                 }
             }
             else {
                 let loginModel = LoginModel(token: postReturn?.token ?? "")
-                DispatchQueue.main.sync {
-                    self.presenter?.loginSuccess(loginModel: loginModel)
+                DispatchQueue.main.sync { [weak self] in
+                    self?.presenter?.loginSuccess(loginModel: loginModel)
                 }
             }
         }
@@ -33,6 +33,3 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
     }
 
 }
-
-
-
