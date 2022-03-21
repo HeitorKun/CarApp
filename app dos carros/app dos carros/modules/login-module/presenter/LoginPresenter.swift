@@ -23,10 +23,13 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
 
     func loginRequest(loginUser: String, password: String) {
         if loginUser == "" && password == "" {
+
             view?.pleaseCompleteFieldsUIAlert()
-        }
-        else {
+
+        } else {
+
             interactor?.postLogin(loginUser: loginUser, password: password)
+
         }
     }
 

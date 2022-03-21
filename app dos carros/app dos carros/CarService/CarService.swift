@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class CarService {
 
     func login(username: String, password: String,  completion: @escaping (LoginSuccessPostReturn?) -> ()) {
@@ -36,7 +35,7 @@ class CarService {
                 return
             }
 
-            if let data = data, let dataString = String(data: data, encoding: .utf8) {
+            if let data = data {
                 if let loginSuccessPostReturnStruct = try? JSONDecoder().decode(LoginSuccessPostReturn.self, from: data) {
                     completion(loginSuccessPostReturnStruct)
                 } else {
@@ -49,4 +48,36 @@ class CarService {
 
     }
 
+    func fetchCarsWithToken(token: String, completion: @escaping ([CarInfosSuccessGetReturn]?) -> ()) {
+
+        guard let url = URL(string: carrosListGetAPIAdress) else {return }
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = [
+            "Host": "carros-springboot.herokuapp.com",
+            "Authorization": "Bearer \(token)"
+        ]
+
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard error == nil else {
+                completion(nil)
+                return }
+
+            if let data = data {
+
+                if let carInfosList = try? JSONDecoder().decode([CarInfosSuccessGetReturn].self, from: data) {
+
+                    completion(carInfosList)
+                } else {
+                    completion(nil)
+                }
+
+            }
+
+            completion(nil)
+        }.resume()
+
+    }
+
 }
+
+

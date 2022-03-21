@@ -26,3 +26,17 @@ struct LoginFailurePostReturn: Decodable {
 
 }
 
+struct CarInfosSuccessGetReturn: Decodable {
+
+    var id: Int?
+    var nome: String?
+    var tipo: String?
+    var descricao: String?
+    var urlFoto: String?
+    var urlVideo: String?
+    var latitude: String?
+    var longitude: String?
+
+}
+
+

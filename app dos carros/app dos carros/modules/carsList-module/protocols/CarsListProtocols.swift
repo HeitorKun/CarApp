@@ -14,6 +14,9 @@ protocol ViewToPresenterCarsListProtocol:AnyObject{
     var router: PresenterToRouterCarsListProtocol? {get set}
 
 
+    func fetchCarsFromInteractor()
+
+
 }
 
 protocol PresenterToViewCarsListProtocol:AnyObject {
@@ -35,6 +38,8 @@ protocol PresenterToRouterCarsListProtocol:AnyObject {
 protocol PresenterToInteractorCarsListProtocol:AnyObject {
 
     var presenter:InteractorToPresenterCarsListProtocol? {get set}
+
+    func fetchCarList()
 
 }
 

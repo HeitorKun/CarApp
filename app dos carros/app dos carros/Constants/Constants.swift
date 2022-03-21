@@ -9,3 +9,4 @@ import Foundation
 
 
 let loginPostAPIAdress: String = "https://carros-springboot.herokuapp.com/api/v2/login"
+let carrosListGetAPIAdress: String = "https://carros-springboot.herokuapp.com/api/v2/carros"

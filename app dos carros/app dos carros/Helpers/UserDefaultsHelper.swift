@@ -13,12 +13,25 @@ protocol SaveTokenAfterLogin {
 
 }
 
-struct UserDefaultsHelper: SaveTokenAfterLogin {
+protocol FetchTokenFromMemory {
+
+    func fetchTokenFromMemory() -> String?
+
+}
+
+struct UserDefaultsHelper: SaveTokenAfterLogin, FetchTokenFromMemory {
 
     func saveToken(token: String) {
 
         let defaults = UserDefaults.standard
         defaults.set(token, forKey: "token")
+
+    }
+
+    func fetchTokenFromMemory() -> String? {
+
+        let defaults = UserDefaults.standard
+        return defaults.string(forKey: "token")
 
     }
 
