@@ -46,6 +46,7 @@
 		FD6CC33127E8FDAC001DA213 /* LoginSuccessPostReturn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697527D68C4600BC8BCC /* LoginSuccessPostReturn.swift */; };
 		FD6CC33227E8FDAF001DA213 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F697327D6899300BC8BCC /* Constants.swift */; };
 		FD6CC33327E8FDBF001DA213 /* CarsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4F698F27D7E05D00BC8BCC /* CarsListPresenter.swift */; };
+		FD6CC39527E9FE59001DA213 /* SelectedCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6CC39427E9FE59001DA213 /* SelectedCar.storyboard */; };
 		FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */; };
 		FDFBCE0127D91DA900619AE8 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		FD6CC31027E7E3C5001DA213 /* CarsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListModel.swift; sourceTree = "<group>"; };
 		FD6CC31627E8F8FD001DA213 /* app dos carrosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app dos carrosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6CC31827E8F8FD001DA213 /* app_dos_carrosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_dos_carrosTests.swift; sourceTree = "<group>"; };
+		FD6CC39427E9FE59001DA213 /* SelectedCar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectedCar.storyboard; sourceTree = "<group>"; };
 		FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
 		FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 				FD4F695027D66AA800BC8BCC /* InitialStoryboard.storyboard */,
 				FD4F697C27D7CDFD00BC8BCC /* CarsStoryboard.storyboard */,
 				FD4F695527D66AAA00BC8BCC /* LaunchScreen.storyboard */,
+				FD6CC39427E9FE59001DA213 /* SelectedCar.storyboard */,
 			);
 			path = "App-UI";
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD4F695727D66AAA00BC8BCC /* LaunchScreen.storyboard in Resources */,
+				FD6CC39527E9FE59001DA213 /* SelectedCar.storyboard in Resources */,
 				FD4F695427D66AAA00BC8BCC /* Assets.xcassets in Resources */,
 				FD4F697D27D7CDFD00BC8BCC /* CarsStoryboard.storyboard in Resources */,
 				FD4F695227D66AA800BC8BCC /* InitialStoryboard.storyboard in Resources */,

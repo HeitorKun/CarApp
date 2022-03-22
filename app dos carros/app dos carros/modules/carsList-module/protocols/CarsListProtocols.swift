@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViewToPresenterCarsListProtocol:AnyObject{
 
@@ -13,9 +14,8 @@ protocol ViewToPresenterCarsListProtocol:AnyObject{
     var interactor: PresenterToInteractorCarsListProtocol? {get set}
     var router: PresenterToRouterCarsListProtocol? {get set}
 
-
     func fetchCarsFromInteractor()
-
+    func goToThisCarDetailsScreen(thisCar: CarsListModel)
 
 }
 
@@ -29,9 +29,9 @@ protocol PresenterToViewCarsListProtocol:AnyObject {
 
 protocol PresenterToRouterCarsListProtocol:AnyObject {
 
-    static func createMovieModule()->CarsListViewController
+    static func createMovieModule()-> UINavigationController
 
-    func pushToCarDetailsScreen()
+    func pushToCarDetailsScreen(thisCar: CarsListModel, fromThisViewController: UIViewController)
 
 }
 

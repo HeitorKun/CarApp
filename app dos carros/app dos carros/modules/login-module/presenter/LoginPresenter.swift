@@ -34,7 +34,7 @@ class LoginPresenter: ViewToPresenterMovieProtocol {
     }
 
     func loginDoneViewReadyForNavigation() {
-        router?.pushToCarScreen(viewController: view as! UIViewController)
+        router?.presentCarsScreen(viewController: view as! UIViewController)
     }
 
 }

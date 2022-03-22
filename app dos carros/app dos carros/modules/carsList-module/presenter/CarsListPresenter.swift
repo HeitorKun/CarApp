@@ -5,6 +5,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CarsListPresenter : ViewToPresenterCarsListProtocol {
 
@@ -13,7 +14,6 @@ class CarsListPresenter : ViewToPresenterCarsListProtocol {
     var interactor: PresenterToInteractorCarsListProtocol?
 
     var router: PresenterToRouterCarsListProtocol?
-
 
     func fetchCarsFromInteractor() {
 
@@ -26,10 +26,12 @@ class CarsListPresenter : ViewToPresenterCarsListProtocol {
 
     }
 
+    func goToThisCarDetailsScreen(thisCar: CarsListModel) {
+
+        router?.pushToCarDetailsScreen(thisCar: thisCar, fromThisViewController: view as! UIViewController)
+    }
 
 }
 extension CarsListPresenter : InteractorToPresenterCarsListProtocol {
-
-
 
 }

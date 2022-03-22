@@ -34,7 +34,7 @@ protocol PresenterToRouterLoginProtocol:AnyObject {
 
     static func createMovieModule()->LoginViewController
 
-    func pushToCarScreen(viewController: UIViewController)
+    func presentCarsScreen(viewController: UIViewController)
 
 }
 

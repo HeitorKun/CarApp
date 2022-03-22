@@ -11,11 +11,13 @@ import UIKit
 
 class CarsListRouter: PresenterToRouterCarsListProtocol {
 
-    static func createMovieModule() -> CarsListViewController {
+    static func createMovieModule() -> UINavigationController {
 
-        let CarsStoryboard = UIStoryboard(name: "CarsStoryboard", bundle: nil)
-        guard let carsListViewController = CarsStoryboard.instantiateViewController(identifier: "CarsListViewController") as? CarsListViewController else {
-            return CarsListViewController()
+        let carsStoryboard = UIStoryboard(name: "CarsStoryboard", bundle: nil)
+        let initialNavigationController = carsStoryboard.instantiateInitialViewController() as? UINavigationController
+
+        guard let carsListViewController = initialNavigationController?.topViewController  as? CarsListViewController else {
+            return UINavigationController()
         }
 
         let presenter: ViewToPresenterCarsListProtocol & InteractorToPresenterCarsListProtocol = CarsListPresenter()
@@ -30,11 +32,14 @@ class CarsListRouter: PresenterToRouterCarsListProtocol {
 
 
 
-        return carsListViewController
+        return initialNavigationController ?? UINavigationController()
 
     }
 
-    func pushToCarDetailsScreen() {
+    func pushToCarDetailsScreen(thisCar: CarsListModel, fromThisViewController: UIViewController) {
+
+        
+
 
     }
 

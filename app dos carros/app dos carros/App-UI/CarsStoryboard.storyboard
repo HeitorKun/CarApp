@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yrb-Cy-Kpf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cars List View Controller-->
+        <!--Carros-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="CarsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CarsListViewController" customModule="app_dos_carros" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,32 +56,40 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDU-nz-hgc">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" red="0.31307350989999999" green="0.68630963560000002" blue="0.3378100081" alpha="0.53719344989999995" colorSpace="custom" customColorSpace="displayP3"/>
-                                <items>
-                                    <navigationItem title="Carros" id="50O-tU-nGJ"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yDU-nz-hgc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6Ek-mh-Ujd"/>
                             <constraint firstItem="IjB-0O-NZ1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Etv-2L-D1w"/>
                             <constraint firstAttribute="bottom" secondItem="IjB-0O-NZ1" secondAttribute="bottom" id="NRj-v2-mz9"/>
-                            <constraint firstItem="IjB-0O-NZ1" firstAttribute="top" secondItem="yDU-nz-hgc" secondAttribute="bottom" id="cKR-O7-zFi"/>
-                            <constraint firstItem="yDU-nz-hgc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cbF-f5-hex"/>
+                            <constraint firstItem="IjB-0O-NZ1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QgB-jj-9bV"/>
                             <constraint firstItem="IjB-0O-NZ1" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="r4Z-oN-kli"/>
-                            <constraint firstItem="yDU-nz-hgc" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="rAz-CP-zP7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZyO-e4-OXT"/>
+                    <navigationItem key="navigationItem" title="Carros" id="ZyO-e4-OXT"/>
                     <connections>
                         <outlet property="carsTableView" destination="IjB-0O-NZ1" id="WR4-Ls-7Ch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.1014492753625" y="134.59821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zsa-9e-Wsa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yrb-Cy-Kpf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h3W-Um-Fmq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Cvt-Om-RNr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKo-Zq-Lr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="134.59821428571428"/>
         </scene>

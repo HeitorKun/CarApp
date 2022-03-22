@@ -30,6 +30,7 @@ class CarsListViewController: UIViewController, PresenterToViewCarsListProtocol 
 
 }
 extension CarsListViewController: UITableViewDataSource, UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return carList.count
     }
@@ -40,6 +41,12 @@ extension CarsListViewController: UITableViewDataSource, UITableViewDelegate {
         cell.carImageView.loadFrom(URLAddress: carList[indexPath.row].urlFoto)
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        presenter?.goToThisCarDetailsScreen(thisCar: carList[indexPath.row])
+        
     }
 
 

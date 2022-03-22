@@ -33,7 +33,7 @@ class LoginRouter: PresenterToRouterLoginProtocol {
         return loginViewController
     }
 
-    func pushToCarScreen(viewController: UIViewController) {
+    func presentCarsScreen(viewController: UIViewController) {
 
         let carListViewController = CarsListRouter.createMovieModule()
         carListViewController.modalPresentationStyle = .fullScreen
