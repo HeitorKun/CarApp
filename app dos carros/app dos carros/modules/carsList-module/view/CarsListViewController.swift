@@ -24,18 +24,22 @@ class CarsListViewController: UIViewController, PresenterToViewCarsListProtocol 
     }
 
     func receiveCarsData(carList: [CarsListModel]) {
-
+        self.carList = carList
         carsTableView.reloadData()
     }
 
 }
 extension CarsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return carList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = carsTableView.dequeueReusableCell(withIdentifier: "CarListTableViewCell") as? CarListTableViewCell else { return UITableViewCell() }
+
+        cell.carImageView.loadFrom(URLAddress: carList[indexPath.row].urlFoto)
+
+        return cell
     }
 
 
