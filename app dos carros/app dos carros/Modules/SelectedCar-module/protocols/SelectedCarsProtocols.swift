@@ -13,6 +13,8 @@ protocol ViewToPresenterSelectedCarProtocol:AnyObject{
     var interactor: PresenterToInteractorSelectedCarProtocol? {get set}
     var router: PresenterToRouterSelectedCarProtocol? {get set}
 
+    func getUrlForView() -> String
+
 }
 
 protocol PresenterToViewSelectedCarProtocol:AnyObject {
@@ -24,13 +26,15 @@ protocol PresenterToViewSelectedCarProtocol:AnyObject {
 
 protocol PresenterToRouterSelectedCarProtocol:AnyObject {
 
-    static func createMovieModule()-> SelectedCarViewController
+    static func createMovieModule(thisSelectedCarData: CarsListModel) -> SelectedCarViewController
 
 }
 
 protocol PresenterToInteractorSelectedCarProtocol:AnyObject {
 
     var presenter:InteractorToPresenterSelectedCarProtocol? {get set}
+
+    func getSelectedCarData() -> SelectedCarModel
 
 }
 

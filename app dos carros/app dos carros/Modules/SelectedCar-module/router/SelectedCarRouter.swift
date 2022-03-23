@@ -10,7 +10,7 @@ import UIKit
 
 class SelectedCarRouter: PresenterToRouterSelectedCarProtocol {
 
-    static func createMovieModule() -> SelectedCarViewController {
+    static func createMovieModule(thisSelectedCarData: CarsListModel) -> SelectedCarViewController {
 
         let selectedCarStoryboard = UIStoryboard(name: "SelectedCarStoryboard", bundle: nil)
 
@@ -18,7 +18,7 @@ class SelectedCarRouter: PresenterToRouterSelectedCarProtocol {
 
 
         let presenter: ViewToPresenterSelectedCarProtocol & InteractorToPresenterSelectedCarProtocol = SelectedCarPresenter()
-        let interactor: PresenterToInteractorSelectedCarProtocol = SelectedCarInteractor()
+        let interactor: PresenterToInteractorSelectedCarProtocol = SelectedCarInteractor(selectedCarListModel: thisSelectedCarData)
         let router:PresenterToRouterSelectedCarProtocol = SelectedCarRouter()
 
         selectedCarViewController.presenter = presenter

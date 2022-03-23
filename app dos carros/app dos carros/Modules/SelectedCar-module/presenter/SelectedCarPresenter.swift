@@ -16,5 +16,9 @@ class SelectedCarPresenter: InteractorToPresenterSelectedCarProtocol, ViewToPres
 
     var router: PresenterToRouterSelectedCarProtocol?
 
+    func getUrlForView() -> String {
+        return interactor?.getSelectedCarData().urlFoto ?? ""
+    }
+
 
 }

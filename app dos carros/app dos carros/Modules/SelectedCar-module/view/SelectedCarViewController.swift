@@ -20,8 +20,12 @@ class SelectedCarViewController: UIViewController, PresenterToViewSelectedCarPro
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
 
-        // Do any additional setup after loading the view.
+    }
+
+    private func setUpUI() {
+        selectedCarImageView.loadFrom(URLAddress: presenter?.getUrlForView() ?? "")
     }
 
 

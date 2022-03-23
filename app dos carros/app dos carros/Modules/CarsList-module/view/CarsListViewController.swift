@@ -46,7 +46,7 @@ extension CarsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         presenter?.goToThisCarDetailsScreen(thisCar: carList[indexPath.row])
-        
+
     }
 
 

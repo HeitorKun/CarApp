@@ -38,7 +38,8 @@ class CarsListRouter: PresenterToRouterCarsListProtocol {
 
     func pushToCarDetailsScreen(thisCar: CarsListModel, fromThisViewController: UIViewController) {
 
-        
+        let selectedCarViewController = SelectedCarRouter.createMovieModule(thisSelectedCarData: thisCar)
+        fromThisViewController.navigationController?.pushViewController(selectedCarViewController, animated: true)
 
     }
 
