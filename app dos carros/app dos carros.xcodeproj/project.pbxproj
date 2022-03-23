@@ -53,6 +53,7 @@
 		FD6CC3A627EA1B9A001DA213 /* SelectedCarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A527EA1B9A001DA213 /* SelectedCarPresenter.swift */; };
 		FD6CC3A827EA1BE8001DA213 /* SelectedCarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A727EA1BE8001DA213 /* SelectedCarInteractor.swift */; };
 		FD6CC3AA27EA9EE5001DA213 /* SelectedCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A927EA9EE5001DA213 /* SelectedCarModel.swift */; };
+		FD6CC3B227EBB9F4001DA213 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3B127EBB9F4001DA213 /* UIImageViewExtension.swift */; };
 		FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */; };
 		FDFBCE0127D91DA900619AE8 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		FD6CC3A527EA1B9A001DA213 /* SelectedCarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarPresenter.swift; sourceTree = "<group>"; };
 		FD6CC3A727EA1BE8001DA213 /* SelectedCarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarInteractor.swift; sourceTree = "<group>"; };
 		FD6CC3A927EA9EE5001DA213 /* SelectedCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCarModel.swift; sourceTree = "<group>"; };
+		FD6CC3B127EBB9F4001DA213 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
 		FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 		FD4F694927D66AA800BC8BCC /* app dos carros */ = {
 			isa = PBXGroup;
 			children = (
+				FD6CC3B027EBB9C5001DA213 /* Extentions */,
 				FDFBCDFF27D91D9000619AE8 /* Helpers */,
 				FD4F697A27D7CD9300BC8BCC /* App-UI */,
 				FD4F697227D688CD00BC8BCC /* Constants */,
@@ -386,6 +389,14 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		FD6CC3B027EBB9C5001DA213 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FD6CC3B127EBB9F4001DA213 /* UIImageViewExtension.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		FDFBCDFF27D91D9000619AE8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,6 +532,7 @@
 				FD4F698427D7D10900BC8BCC /* CarsListProtocols.swift in Sources */,
 				FD4F697927D78F6400BC8BCC /* LoginRouter.swift in Sources */,
 				FD4F696C27D6754E00BC8BCC /* LoginInteractor.swift in Sources */,
+				FD6CC3B227EBB9F4001DA213 /* UIImageViewExtension.swift in Sources */,
 				FD4F696627D66CCC00BC8BCC /* LoginProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
