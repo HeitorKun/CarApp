@@ -19,7 +19,6 @@ class CarsListViewController: UIViewController, PresenterToViewCarsListProtocol 
         super.viewDidLoad()
         carsTableView.dataSource = self
         carsTableView.delegate = self
-        presenter?.fetchCarsFromInteractor()
 
     }
 

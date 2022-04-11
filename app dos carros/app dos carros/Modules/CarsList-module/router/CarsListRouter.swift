@@ -16,6 +16,7 @@ class CarsListRouter: PresenterToRouterCarsListProtocol {
         let carsStoryboard = UIStoryboard(name: "CarsStoryboard", bundle: nil)
         let initialNavigationController = carsStoryboard.instantiateInitialViewController() as? UINavigationController
 
+
         guard let carsListViewController = initialNavigationController?.topViewController  as? CarsListViewController else {
             return UINavigationController()
         }
@@ -30,6 +31,8 @@ class CarsListRouter: PresenterToRouterCarsListProtocol {
         presenter.interactor = interactor
         interactor.presenter = presenter
 
+        //prefetching data
+        presenter.fetchCarsFromInteractor()
 
 
         return initialNavigationController ?? UINavigationController()
