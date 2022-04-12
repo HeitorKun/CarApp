@@ -9,7 +9,7 @@ import Foundation
 
 class CarsListInteractor: PresenterToInteractorCarsListProtocol {
 
-    var presenter: InteractorToPresenterCarsListProtocol?
+    weak var presenter: InteractorToPresenterCarsListProtocol?
 
     private let fetchTokenHelper: FetchTokenFromMemory
 

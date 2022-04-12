@@ -11,7 +11,7 @@ import Foundation
 
 class LoginInteractor: PresenterToInteractorLoginProtocol {
 
-    var presenter: InteractorToPresenterLoginProtocol?
+    weak var presenter: InteractorToPresenterLoginProtocol?
 
     func postLogin(loginUser: String, password: String) {
 

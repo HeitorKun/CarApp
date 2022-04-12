@@ -11,7 +11,7 @@ import Foundation
 
 class SelectedCarInteractor: PresenterToInteractorSelectedCarProtocol {
     
-    var presenter: InteractorToPresenterSelectedCarProtocol?
+    weak var presenter: InteractorToPresenterSelectedCarProtocol?
 
     private var selectedCarListModel: CarsListModel
 
