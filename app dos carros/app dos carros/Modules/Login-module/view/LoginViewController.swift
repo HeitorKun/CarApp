@@ -18,6 +18,8 @@ class LoginViewController: UIViewController, PresenterToViewLoginProtocol {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
 
+    private var loginHasBeenSelected:Bool = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
@@ -31,6 +33,14 @@ class LoginViewController: UIViewController, PresenterToViewLoginProtocol {
         bigLoginView.clipsToBounds = true
         passwordTextField.isSecureTextEntry = true
 
+    }
+
+    @IBAction func touchDownLoginUserTextField(_ sender: UITextField) {
+        if loginHasBeenSelected == false {
+            //automatically claring the UITextField on the first touch
+            sender.text = ""
+            loginHasBeenSelected = true
+        }
     }
 
     @IBAction func didTouchLoginButton(_ sender: UIButton) {
