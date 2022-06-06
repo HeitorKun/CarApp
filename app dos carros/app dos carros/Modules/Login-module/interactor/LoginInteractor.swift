@@ -24,13 +24,13 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
         loginService.login(username: loginUser, password: password) { postReturn in
 
             if postReturn == nil {
-                DispatchQueue.main.sync { [weak self] in
+                DispatchQueue.main.async { [weak self] in
                     self?.presenter?.loginFailed()
                 }
             }
             else {
                 let loginModel = LoginModel(token: postReturn?.token ?? "")
-                DispatchQueue.main.sync { [weak self] in
+                DispatchQueue.main.async { [weak self] in
                     self?.presenter?.loginSuccess(loginModel: loginModel)
                 }
             }
