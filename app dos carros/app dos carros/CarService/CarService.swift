@@ -11,6 +11,7 @@ import Foundation
 protocol LoginProtocol {
     func login(username: String, password: String,  completion: @escaping (LoginSuccessPostReturn?) -> ())
 }
+
 protocol FetchCarsWithTokenProtocol {
     func fetchCarsWithToken(token: String, completion: @escaping ([CarInfosSuccessGetReturn]?) -> ())
 }
@@ -20,9 +21,6 @@ protocol CarServiceProtocol: LoginProtocol & FetchCarsWithTokenProtocol{
     func fetchCarsWithToken(token: String, completion: @escaping ([CarInfosSuccessGetReturn]?) -> ())
 
 }
-
-
-
 
 class CarService: CarServiceProtocol {
 

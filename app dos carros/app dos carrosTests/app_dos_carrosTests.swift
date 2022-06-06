@@ -20,29 +20,41 @@ class app_dos_carrosTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testLoginInteractor() throws {
 
+        class loginInteractorToPresenterLoginProtocolTestClass: InteractorToPresenterLoginProtocol {
 
-        class LoginInteractorTest: InteractorToPresenterLoginProtocol {
-            let loginInteractor = LoginInteractor()
-
-            init() {
-                loginInteractor.presenter = self
-                loginInteractor.postLogin(loginUser: "user", password: "123")
-            }
+            var successLoginVar: Bool?
+            var failedLoginVar: Bool?
 
             func loginSuccess(loginModel: LoginModel) {
-                XCTAssert(loginModel.token.count != 0 )
+                DispatchQueue.main.sync { [weak self] in
+                    self?.successLoginVar = true
+                }
             }
 
             func loginFailed() {
-                
+                DispatchQueue.main.sync { [weak self] in
+                    self?.failedLoginVar = false
+                }
             }
 
         }
 
+        class loginSuccessServiceMockForTestClass:LoginProtocol  {
+            func login(username: String, password: String, completion: @escaping (LoginSuccessPostReturn?) -> ()) {
+                completion(LoginSuccessPostReturn(id: 123, login: "user", nome: "john", email: "john@john.com", urlFoto: "", token: "123456", roles: []))
+            }
 
+        }
 
+        let loginInteractor = LoginInteractor(loginService: loginSuccessServiceMockForTestClass())
+        let loginInteractorPresenterProtocol =  loginInteractorToPresenterLoginProtocolTestClass()
+        loginInteractor.presenter = loginInteractorPresenterProtocol
+
+        loginInteractor.postLogin(loginUser: "user", password: "123")
+
+        XCTAssertEqual((loginInteractorPresenterProtocol.successLoginVar),true)
 
 
     }

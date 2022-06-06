@@ -55,6 +55,13 @@
 		FD6CC3AA27EA9EE5001DA213 /* SelectedCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A927EA9EE5001DA213 /* SelectedCarModel.swift */; };
 		FD6CC3B227EBB9F4001DA213 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3B127EBB9F4001DA213 /* UIImageViewExtension.swift */; };
 		FDAFFC4527D7EEC1009E5F74 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAFFC4427D7EEC1009E5F74 /* CarListTableViewCell.swift */; };
+		FDBAAFA8284E899700F9C515 /* SelectedCarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A327EA1B7E001DA213 /* SelectedCarRouter.swift */; };
+		FDBAAFA9284E89B800F9C515 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3B127EBB9F4001DA213 /* UIImageViewExtension.swift */; };
+		FDBAAFAA284E89C500F9C515 /* SelectedCarsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A127EA1772001DA213 /* SelectedCarsProtocols.swift */; };
+		FDBAAFAB284E89DB00F9C515 /* SelectedCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC39F27EA173F001DA213 /* SelectedCarViewController.swift */; };
+		FDBAAFAC284E89E500F9C515 /* SelectedCarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A527EA1B9A001DA213 /* SelectedCarPresenter.swift */; };
+		FDBAAFAD284E89EF00F9C515 /* SelectedCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A927EA9EE5001DA213 /* SelectedCarModel.swift */; };
+		FDBAAFAE284E89FB00F9C515 /* SelectedCarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6CC3A727EA1BE8001DA213 /* SelectedCarInteractor.swift */; };
 		FDFBCE0127D91DA900619AE8 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFBCE0027D91DA900619AE8 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -542,6 +549,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD6CC32827E8FAF4001DA213 /* LoginViewController.swift in Sources */,
+				FDBAAFAD284E89EF00F9C515 /* SelectedCarModel.swift in Sources */,
+				FDBAAFAC284E89E500F9C515 /* SelectedCarPresenter.swift in Sources */,
 				FD6CC33227E8FDAF001DA213 /* Constants.swift in Sources */,
 				FD6CC32527E8F9F5001DA213 /* LoginPresenter.swift in Sources */,
 				FD6CC32D27E8FD9E001DA213 /* CarListTableViewCell.swift in Sources */,
@@ -549,8 +558,13 @@
 				FD6CC33327E8FDBF001DA213 /* CarsListPresenter.swift in Sources */,
 				FD6CC32927E8FB13001DA213 /* UserDefaultsHelper.swift in Sources */,
 				FD6CC32127E8F9DB001DA213 /* LoginInteractor.swift in Sources */,
+				FDBAAFAB284E89DB00F9C515 /* SelectedCarViewController.swift in Sources */,
 				FD6CC32427E8F9F1001DA213 /* LoginProtocols.swift in Sources */,
+				FDBAAFA8284E899700F9C515 /* SelectedCarRouter.swift in Sources */,
+				FDBAAFAE284E89FB00F9C515 /* SelectedCarInteractor.swift in Sources */,
+				FDBAAFA9284E89B800F9C515 /* UIImageViewExtension.swift in Sources */,
 				FD6CC32B27E8FB31001DA213 /* CarsListRouter.swift in Sources */,
+				FDBAAFAA284E89C500F9C515 /* SelectedCarsProtocols.swift in Sources */,
 				FD6CC32327E8F9ED001DA213 /* LoginModel.swift in Sources */,
 				FD6CC32F27E8FDA4001DA213 /* CarsListInteractor.swift in Sources */,
 				FD6CC32C27E8FD99001DA213 /* CarsListProtocols.swift in Sources */,
