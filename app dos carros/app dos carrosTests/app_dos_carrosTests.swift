@@ -23,7 +23,7 @@ class app_dos_carrosTests: XCTestCase {
     func testExample() throws {
 
 
-        class heitorTest: InteractorToPresenterLoginProtocol {
+        class LoginInteractorTest: InteractorToPresenterLoginProtocol {
             let loginInteractor = LoginInteractor()
 
             init() {

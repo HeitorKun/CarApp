@@ -13,9 +13,15 @@ class LoginInteractor: PresenterToInteractorLoginProtocol {
 
     weak var presenter: InteractorToPresenterLoginProtocol?
 
+    private var loginService: LoginProtocol
+
+    init(loginService :LoginProtocol = CarService()) {
+        self.loginService = loginService
+    }
+
     func postLogin(loginUser: String, password: String) {
 
-        CarService().login(username: loginUser, password: password) { postReturn in
+        loginService.login(username: loginUser, password: password) { postReturn in
 
             if postReturn == nil {
                 DispatchQueue.main.sync { [weak self] in
